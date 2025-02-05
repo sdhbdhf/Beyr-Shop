@@ -145,7 +145,7 @@
   
   body {
     background-color: white;
-    background-image: url(images/Background/3d-rendering-spring-wallpaper.jpg);
+    background-image: url(./Background/3d-rendering-spring-wallpaper.jpg);
     background-attachment: fixed;
     background-size: cover;
     position: relative;
