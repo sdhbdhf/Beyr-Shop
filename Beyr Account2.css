@@ -3,7 +3,7 @@
     src: url(ProductSans-Regular.ttf);
 }
 body{
-    background-image: url(images/Background/3d-rendering-spring-wallpaper.jpg);
+    background-image: url(./Background/3d-rendering-spring-wallpaper.jpg);
     display: flex;
     justify-content: center; 
     align-items: center;      
@@ -158,7 +158,7 @@ button
 {
     width: 855px;
     height: 360px;
-    background-image: url(Background/3d-rendering-spring-wallpaper.jpg);
+    background-image: url(Background/-rendering-spring-wallpaper.jpg);
     background-position: center;
     background-size:auto;
     
