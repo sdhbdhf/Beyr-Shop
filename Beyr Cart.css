@@ -12,7 +12,7 @@ html
 }
 body
 {
-    background:url("Background/3d-rendering-spring-wallpaper.jpg");
+    background-image:url("Background/3d-rendering-spring-wallpaper.jpg");
 }
 h1{
     color:black;
