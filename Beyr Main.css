@@ -63,7 +63,7 @@ body{
     align-items: flex-end;
     justify-content: flex-end;
     /* flex-direction: column;  awesome style i made using this but when i activate this align item is center*/
-    background-image: url(images/Background/3d-rendering-spring-wallpaper.jpg);
+    background-image: url(Background/3d-rendering-spring-wallpaper.jpg);
     background-position:center;
     background-size:cover;
     
