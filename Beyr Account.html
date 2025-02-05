@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyr Account</title>
+    <link rel="stylesheet" href="Beyr Account.css">
+    <link rel="stylesheet" href="Beyr Account2.css">
+    <link rel="shortcut icon" href="images/favicon-01.svg" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="Accountbeyr">
+    <h2 style="color: black;">Beyr Account</h2><br>
+    <button popovertarget="hello2" class="pngbutton">Signin <img  src="images/signin.gif" width="150px"></button>
+    <div popover id="hello2" class="Popover">
+     <div  id="hello">
+         <div class="twoParts">   
+             <div class="signin">
+                     <div class="Headersignin">
+                         <h3 class="Headersignin">Signin</h3>
+                     </div>
+                 <form>
+                    <div class="Forms">
+                          <label for="Fname2" class="clabel">
+                            Firstname
+                          </label><br>
+                          <input id="Fname2" type="text" placeholder="Firstname" name="fname" required><br>
+                          <label for="_datemaker"  class="clabel">
+                            Birthday
+                          </label><br>
+                          <input type="date" name="Birthday" id="_datemaker"  class="clabel"><br>
+                          <label for="emailid"  class="clabel">
+                            Email
+                          </label><br>
+                          <input  class="clabel" type="email" name="email2" id="emailid" placeholder="beyrshop@gmail.com"><br>
+                          <label for="passid"  class="clabel">
+                            Password
+                          </label><br>
+                          <input  class="clabel" id="passid" type="password" placeholder="******" name="passofuser"><br>
+                     </div>  
+                          <input class="button2" type="submit" value="Signin">   
+                 </form>
+             </div>
+         </div>
+     
+                
+         <div class="signOtherAcc">
+                    <h2 style="text-align: center;">Continue By</h2>
+                    <div class="Google">
+                     
+                             <button onclick="window.location.href='https://accounts.google.com/signin/v2/identifier';">
+                                 <img src="images/Google.png" alt="google" width="20px">
+                                 Continue with Google
+                             </button>
+                    </div>
+                    <div class="Meta">
+                             <button  onclick="location.href='https://www.facebook.com/login.php'" rel="noopener noreferrer">
+                                 <img src="images/Meta.png" alt="google" width="25px"> 
+                                 Continue with meta
+                         </button>
+         
+                    </div>
+         </div>
+     </div>
+ </div>
+ <!--After this its option for signin part-->  
+   <button popovertarget="popsignin" class="pngbutton">Signup <img  src="images/signup.gif" alt="" width="150px"></button>
+   <div popover id="popsignin">
+     <form>
+     <div class="signupSignin">
+         <div class="signup">
+             <h2 style="text-align: center;">Signup</h2>
+             <div class="Signupname">
+                 <input type="text" placeholder="Firstname" name="Fname">
+                 <input type="text" placeholder="Middlename" name="Mname">
+                 <input type="text" placeholder="Lastname" name="Lname"><br>
+             </div>
+             <br>
+             <label style="text-align: center;">Sex</label><br>
+             <div class="Signupsex">
+                 <label for="male">
+                     <em>Male</em>
+                 </label>
+                 <input type="radio" id="male" name="sex" value="Male">
+                 <label for="female">
+                     <em>Female</em>
+                 </label>
+                 <input type="radio" id="female" name="sex" value="Female">
+                 <label for="noResponse">
+                     <em>Prefer not to respond</em>
+                 </label>
+                 <input type="radio" id="noResponse" name="sex"value="Prefernottorespond">
+             </div><br>
+             <div class="Signupother">
+                 <label for="datemaker">Birthday</label>
+                 <input type="date" name="" id="datemaker"><br>
+             <label for="country">Place of birth</label>
+                 <select name="countries" id="country" >
+                     <option value="">Select your birth country</option>
+                     <option value="Ethiopia">Ethiopia</option>
+                     <option value="America">USA</option>
+                     <option value="Egypt">Egypt</option>
+                     <option value="Benzuela">Russia</option>
+                     <option value="China">China</option>
+                 </select><br>
+             <label for="uemail">Email</label>
+             <input type="email" name="email2" id="uemail" placeholder="email">
+             <label for="Passofuserid">Password</label>
+             <input name="passOfUser" type="password" placeholder="password" id="Passofuserid">
+             </div><br><br>
+             <div class="Signupbutton">
+                 <input type="submit" value="Signup" id="Signupbutton2">
+             </div>
+         </div>
+     
+     
+     </div>
+   </form>
+ </div>
+ <a href="Beyr Main.html">
+    <svg style="position: relative;bottom:110px; right:50px;" width="40px" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 481.157">
+        <path d="M35.64 0h159.702c19.604 0 35.641 16.037 35.641 35.64v145.308c0 19.604-16.037 35.64-35.641 35.64H35.64c-19.603 0-35.64-16.036-35.64-35.64V35.64C0 16.037 16.037 0 35.64 0zm281.017 264.569h159.702c19.604 0 35.641 16.036 35.641 35.64v145.307c0 19.604-16.037 35.641-35.641 35.641H316.657c-19.603 0-35.64-16.037-35.64-35.641V300.209c0-19.604 16.037-35.64 35.64-35.64zm-281.017 0h159.702c19.604 0 35.641 16.036 35.641 35.64v145.307c0 19.604-16.037 35.641-35.641 35.641H35.64C16.037 481.157 0 465.12 0 445.516V300.209c0-19.604 16.037-35.64 35.64-35.64zM316.657 0h159.702C495.963 0 512 16.037 512 35.64v145.308c0 19.604-16.037 35.64-35.641 35.64H316.657c-19.603 0-35.64-16.036-35.64-35.64V35.64c0-19.603 16.037-35.64 35.64-35.64z"/></svg>
+</a>
+ </div>
+ 
+</body>
+</html>

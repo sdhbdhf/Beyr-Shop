@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>       
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beyr Cart</title>
+<link rel="stylesheet" href="Beyr Cart.css">
+<!--<script src="Learning.js"></script>-->
+<script src="Beyr js.js"></script>
+<script>
+    var value = 0;
+
+function itemAdder() {
+    value += 1;
+    document.getElementById("pricescript").innerHTML = `${value.toFixed(2)}$`;
+}
+function itemRemover()
+{
+    value -= 1;
+    document.getElementById("pricescript").innerHTML = `${value.toFixed(2)}$`;
+}
+
+var adder=document.getElementById("buttonAdder");
+adder.addEventListener("click",itemAdder);
+var dic=document.getElementById("buttondecrease");
+dic.addEventListener("click",itemRemover);
+
+
+
+</script>
+</head>
+<body>
+    <h1 style="text-align:center">Beyr Cart</h1>
+    <p class="content">See your product here to purchase</p>
+    <div style="position: absolute; right: 30px; top: 25px;">
+        <a href="Beyr Main.html">
+            <svg width="40px" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" 
+                 text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" 
+                 clip-rule="evenodd" viewBox="0 0 512 481.157">
+                <path d="M35.64 0h159.702c19.604 0 35.641 16.037 35.641 35.64v145.308c0 19.604-16.037 35.64-35.641 35.64H35.64c-19.603 0-35.64-16.036-35.64-35.64V35.64C0 16.037 16.037 0 35.64 0zm281.017 264.569h159.702c19.604 0 35.641 16.036 35.641 35.64v145.307c0 19.604-16.037 35.641-35.641 35.641H316.657c-19.603 0-35.64-16.037-35.64-35.641V300.209c0-19.604 16.037-35.64 35.64-35.64zm-281.017 0h159.702c19.604 0 35.641 16.036 35.641 35.64v145.307c0 19.604-16.037 35.641-35.641 35.641H35.64C16.037 481.157 0 465.12 0 445.516V300.209c0-19.604 16.037-35.64 35.64-35.64zM316.657 0h159.702C495.963 0 512 16.037 512 35.64v145.308c0 19.604-16.037 35.64-35.641 35.64H316.657c-19.603 0-35.64-16.036-35.64-35.64V35.64c0-19.603 16.037-35.64 35.64-35.64z"/>
+            </svg>
+        </a>
+    </div>
+    
+    <div class="gridparent">
+        <div class="gridchild">
+            <h2>Total Price</h2>
+            <h3  id="pricescript">0.00$</h3>
+        </div>
+        <div class="gridchild2">
+             <div class="items">
+                <div class="images">
+                    <img style="border-radius: 4px;" src="images/images (1).jpeg" alt="clock" width="100%">
+                </div>
+                <div class="text">
+                    <h4>Samsung Watch</h4>
+                    <p class="content">This is the 2025 smart watch</p>
+                </div>
+                <div class="price">
+                    <button id="buttonAdder">+</button>
+                    <p style="width: 50px;" id="varitem">0 item</p>
+                    <button id="buttondecrease">-</button>
+                </div>
+             </div>
+             <div class="items2 ">
+                <div class="images2">
+                    <img style="border-radius: 4px;" src="images/running-shoes-2048px-9718.jpg" alt="clock" width="100%"">
+                </div>
+                <div class="text2">
+                    <h4>Nautica Shoe</h4>
+                    <p class="content">This is the 2025 smart watch</p>
+                </div>
+                <div class="price2">
+                    <button id="buttonAdder">+</button>
+                    <p style="width: 50px;">0 item</p>
+                    <button id="buttondecrease">-</button>
+                </div>
+             </div>
+             <div class="items3 ">
+                <div class="images3">
+                    <img style="border-radius: 4px;" src="images/pc.jpeg" alt="clock" width="100%"">
+                </div>
+                <div class="text3">
+                    <h4>Gaming PC</h4>
+                    <p class="content">This is the 2025 smart watch</p>
+                </div>
+                <div class="price3">
+                    <button id="buttonAdder">+</button>
+                    <p style="width: 50px;">0 item</p>
+                    <button id="buttondecrease">-</button>
+                </div>
+             </div>
+             <div class="items4 ">
+                <div class="images4">
+                    <img style="border-radius: 4px;" src="images/airpod.jpeg" alt="clock" width="100%"">
+                </div>
+                <div class="text4">
+                    <h4>Apple Earpod</h4>
+                    <p class="content">This is the 2025 smart watch</p>
+                </div>
+                <div class="price4">
+                    <button id="buttonAdder">+</button>
+                    <p style="width: 50px;">0 item</p>
+                    <button id="buttondecrease">-</button>
+                </div>
+             </div>
+        </div>
+        <div class="gridchild3">
+                    <div class="shippingadd">
+                        <img src="images/fua.png" alt="" width="70px">
+                        <p>Shipping</p>
+                    </div>
+                    <div class="shippingadd">
+                        <img src="images/fua2.png" alt="" width="70px">
+                        <p>Delivery</p>
+                    </div>
+                    <div class="shippingadd">
+                        <img src="images/fua3.png" alt="" width="70px">
+                        <p>Pickup</p>
+                    </div>
+                    <div class="shippingaddbutton">
+                        <p>Add shipping address for Delivery</p>
+                        <button popovertarget="addressattacher"><p>Add address</p></button>
+                    </div>
+        </div>
+        <div class="gridchild4">
+           
+            <button class="payButton"onclick="window.print();">Pay</button>
+        </div>
+        
+        <div popover id="addressattacher" >
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22590.322287510746!2d38.76643754176768!3d8.996167070619226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2z4Yqg4Yuy4Yi1IOGKoOGJoOGJow!5e0!3m2!1sam!2set!4v1732384257652!5m2!1sam!2set" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- <iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100937.93426829466!2d38.7062653787867!3d9.010349375204711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2z4Yqg4Yuy4Yi1IOGKoOGJoOGJow!5e0!3m2!1sam!2set!4v1732367715089!5m2!1sam!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+    </div>
+</body>
+</html>
