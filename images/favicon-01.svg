@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #ea4335;
+        stroke-width: 3.51px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke: #527dbf;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 1.83px;
+      }
+
+      .cls-3 {
+        stroke: #31a951;
+      }
+
+      .cls-4 {
+        fill: #f9bb17;
+        stroke: #fff;
+        stroke-width: .56px;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-1" cx="16.26" cy="16.21" rx="7.66" ry="7.58"/>
+  <path class="cls-3" d="m20.1,28.08c-2.65.36-5.4.24-7.9-.69-2.86-1.06-5.73-3.42-6.33-6.52"/>
+  <polyline class="cls-4" points="7.12 25.36 7.12 13.3 11.35 19.09 14.15 19.09 14.26 8.23 14.34 1.22 11.12 1.22 11.14 6.62 11.16 14.09 7.45 8.95 4.24 8.95 4.24 25.21"/>
+  <path class="cls-2" d="m27.17,11.87c.57,2.96.46,6.26-.82,9.04-1.15,2.5-3.35,4.59-6.04,5.28"/>
+</svg>
