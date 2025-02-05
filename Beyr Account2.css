@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'ProductSansRegular';
+    src: url(ProductSans-Regular.ttf);
+}
+body{
+    background-image: url(images/Background/3d-rendering-spring-wallpaper.jpg);
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    height: 100vh;            
+    margin: 0;                
+}
+#popsignin
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0px solid;
+    margin-top: 100px;
+    padding: 0;
+    margin: 0 auto;
+    width: 925px;
+    background: transparent;
+}
+form
+{
+    padding-left: 10px;
+}
+
+button
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 2px solid;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-family: 'ProductSansRegular',Arial,Helvetica,sans-serif;
+    
+}
+.signupSignin
+{
+    border: 0px solid;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: 'ProductSansRegular',Arial,Helvetica,sans-serif;
+
+}
+.Signupname, .Signupsex
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    font-family: 'ProductSansRegular',Arial,Helvetica,sans-serif;
+    
+    
+    
+}
+.Signupsex
+{
+    accent-color:#5078B6;
+    
+    
+    
+}
+
+.Signupsex input
+{
+    width: 250px;
+    border: none;
+   transform:scale(1.5);
+     
+}
+.Signupname input
+{
+    border: 1px;
+    border-radius: 5px;
+    border: 1px solid;
+
+}
+.Signupname input:focus
+{
+    outline: 2px solid blue;
+    border: none;
+    
+}
+.Signupother
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 850px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'ProductSansRegular',Arial,Helvetica,sans-serif;
+}
+.Signupother input
+{
+    border: 1px solid;
+    border-radius: 4px;
+
+}
+.Signupother input:focus
+{
+    outline: 2px solid blue;
+    border: none;
+}
+
+.Signupbutton
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+   
+    font-family: 'ProductSansRegular',Arial,Helvetica,sans-serif;
+}
+#Signupbutton2
+{
+    color: #5078B6;
+    height: 40px;
+    border: 1.5px solid #5078B6;
+    border-radius: 4px;
+    font-family: 'ProductSansRegular',Arial,Helvetica,sans-serif;
+}
+#Signupbutton2:hover
+{
+    background-color: #5078B6;
+    color: white;
+}
+#country
+{
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    font-family: 'ProductSansRegular',Arial,Helvetica,sans-serif;
+}
+#country:focus
+{
+    outline: 2px solid #5078B6;
+    border: none;
+}
+.signup
+{
+    width: 855px;
+    height: 360px;
+    background-image: url(Background/3d-rendering-spring-wallpaper.jpg);
+    background-position: center;
+    background-size:auto;
+    
+    background-color:white;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.signin2
+{
+    margin-top: 120px;
+    background-color: white;
+    border: 3px solid goldenrod;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px; 
+     width: 865px; 
+    height: 367.766px;
+    padding: 20px;
+}
+input
+{
+    padding: 10px;
+    width: 300px;
+    
+}

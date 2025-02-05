@@ -1,0 +1,411 @@
+/* Existing CSS (unchanged) */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  
+  .wrapper {
+    position: relative;
+    top: 25px;
+    border: 0px solid black;
+    width: 70%;
+    height: 50px;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+  
+  @keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+  
+  .item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .item::after {
+    content: '';
+    background: #303030;
+    border-radius: 3px;
+    opacity: 0.5;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .item img {
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .item1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  }
+  
+  .item2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  }
+  
+  .item3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  }
+  
+  .item4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  }
+  
+  .item5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  }
+  
+  .item6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  }
+  
+  .item7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  }
+  
+  .item8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  }
+  
+  /* Fonts */
+  @font-face {
+    font-family: 'Playwrite';
+    src: url(font/PlaywriteVN-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: 'fua2';
+    src: url(font/ProductSans-Regular.ttf);
+  }
+  
+  .Holder {
+    margin-top: 120px;
+    margin-right: 0px;
+    border: 0px solid;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .left {
+    display: flex;
+    margin-right: 0px;
+    align-items: center;
+  }
+  
+  ul {
+    display: flex;
+    gap: 30px;
+  }
+  
+  li {
+    list-style: none;
+    display: flex;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #FBBD18;
+  }
+  
+  body {
+    background-color: white;
+    background-image: url(images/Background/3d-rendering-spring-wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+  }
+  
+  h3, p {
+    font-family: 'fua2';
+  }
+  
+  h3:hover {
+    color: #5078B6;
+  }
+  
+  button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5078B6;
+  }
+  
+  .add:hover {
+    background-color: #FBBD18;
+    border: none;
+  }
+  
+  svg {
+    position: relative;
+    right: 4px;
+    width: 15px;
+    height: 15px;
+    fill: white;
+    stroke: aliceblue;
+    stroke-width: 1.25px;
+  }
+  
+  .Heading img {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Heading {
+    border: 0px solid black;
+    color: black;
+    font-family: Playwrite;
+    font-size: small;
+    font-weight: lighter;
+    background-image: url(images/Background/3d-rendering-spring-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    box-shadow: 0px 30px 0px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    transition: 700ms all ease-in-out;
+  }
+  p
+  {
+    font-style: normal;
+  }
+  .place {
+    border: 0px solid;
+    border-radius: 6px;
+    position: relative;
+    padding: 20px;
+    width: 25%;
+    height: 65%;
+    background-color: rebeccapurple;
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    transition: all 800ms ease-in-out;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .info {
+    padding: 10px 0px 0px 10px;
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 0px 0px 6px 6px;
+    height: 135px;
+    background-color: #303030;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+  
+  .footer h3, .footer h2 {
+    text-align: center;
+    color: whitesmoke;
+    width: 200px;
+  }
+  
+  .footer h3:hover, .footer h2:hover {
+    color: #5078B6;
+  }
+  
+  .advert {
+    position: absolute;
+    background-color: #fcfbfb;
+    border-radius: 6px 6px 0px 0px;
+    left: 0px;
+    top: 0px;
+    border: 2px solid black;
+    width: 100%;
+    height: 280px;
+  }
+  
+  .advert img {
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .footer {
+    background: black;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    left: 0px;
+    top: 1150px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .searchBox {
+    width: 900px;
+    opacity: 0.5;
+    margin-left: 20px;
+    margin-right: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .Searchengine {
+    position: relative;
+  }
+  
+  .searchicon {
+    position: absolute;
+    right: 3px;
+    top: 2.5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  .add {
+    position: relative;
+    top: 5px;
+    width: 60px;
+    height: 30px;
+    border: 1px solid #5078B6;
+    background: #5078B6;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    text-align: center;
+    color: #5078B6;
+  }
+  
+  .place:hover {
+    cursor: pointer;
+    background-color: purple;
+  }
+  
+  #needed {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    width: 500px;
+  }
+  
+  .founder {
+    position: absolute;
+    left: 30%;
+    column-gap: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #FBBD18;
+  }
+  
+  .founder img {
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Tablet (768px and below) */
+  @media (max-width: 768px) {
+    .Heading {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .searchBox {
+      width: 80%;
+      margin: 10px auto;
+    }
+  
+    .Holder {
+      margin-top: 180px; /* Adjusted for fixed header */
+    }
+  
+    .place {
+      width: 45%; /* Two items per row */
+      height: 50%;
+    }
+  
+    .footer {
+      top: 1400px; /* Adjusted for smaller screens */
+    }
+  }
+  
+  /* Phone (480px and below) */
+  @media (max-width: 480px) {
+    .Heading {
+      font-size: smaller;
+    }
+  
+    .searchBox {
+      width: 90%;
+    }
+  
+    .Holder {
+      margin-top: 200px; /* Adjusted for fixed header */
+      gap: 20px;
+    }
+  
+    .place {
+      width: 90%; /* One item per row */
+      height: 40%;
+    }
+  
+    .footer {
+      top: 1600px; /* Adjusted for smaller screens */
+    }
+  
+    .founder {
+      left: 20%;
+    }
+  }

@@ -1,0 +1,395 @@
+@font-face {
+    font-family:'fua' ;
+    src: url(font/Google/ProductSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'fua2';
+    src: url(font/Google/ProductSans-Regular.ttf);
+}
+html
+{
+    font-family: 'fua2';
+}
+h1{
+    color:black;
+    font-family: 'fua',sans-serif;
+
+}
+h2
+{
+    margin-top: 60px;
+    color: white;
+    text-align: center;
+    font-family: 'fua2';
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+h3
+{
+    color: white;
+    text-align: center;
+    font-family: 'fua2';
+    font-size: 20px;
+    margin-top: 0px;
+}
+h4
+{
+    font-size: 14px;
+    margin-left: 14px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.content{
+    text-align: center;
+    margin-top:0px;
+    font-family: 'fua2';
+}
+.gridparent
+{
+    border: 0px solid black;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,120px);
+    grid-template-rows: repeat(7,80px);
+    justify-content: center;
+    grid-gap: 15px;
+    
+   
+}
+.gridchild
+{
+    background-color: rgb(99, 97, 97);
+    grid-row-start:1;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:4;
+    border-radius: 4px;
+    
+}   
+.gridchild2
+{
+    background-color: rgb(231, 117, 117);
+    grid-row:span 5;
+    grid-column: span 2; 
+    border-radius: 4px;   
+}
+.gridchild3
+{
+    background-color: rgb(47, 85, 209);
+    grid-row: 3/6;
+    grid-column: 1/4;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(3,130px);
+    grid-row: repeat(2,135px);
+}
+.gridchild4
+{
+    background-color: black;
+    grid-area: 6/1/8/6;
+    border-radius: 4px;
+
+    
+}
+.payButton
+{
+    height: 40px;
+    width: 140px;
+    position: relative;
+    left: 255px;
+    top: 65px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 2px solid white;
+    color: white;
+    font-family: 'fua2';
+    transition: 200ms all ease-in-out;
+
+}
+.payButton:hover
+{
+    background-color: white;
+    color: black;
+}
+.items
+{
+    border: 1px solid;
+    border-radius: 4px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 100px 62.75px 65.75px;
+    grid-template-rows:50px 25px 25px ;
+    left: 12px;
+    top: 12px;
+    height: 100px;
+    width: 90%;
+    background-color: gainsboro;
+   /* box-shadow: 3px 3px 12px 0.125px;*/
+    
+}
+.images
+{
+    /* border: 1px solid red; */
+    border-radius: 4px 0px 0px 4px;
+    grid-row: 1/4;
+    object-fit: cover;
+    width: 85%;
+    align-self: center;
+    justify-self: center;
+    
+    
+    
+}
+/*
+img
+{
+    box-shadow: 5px 4px 10px 3px;
+}
+    */
+
+
+.text
+{
+    grid-column: 2/4;
+    grid-row: 1/3;
+    background-color: gainsboro;
+    border-radius: 0px 4px 0px 0px;
+    
+}
+
+.price
+{
+   grid-column: 2/4;
+   background-color: whitesmoke;
+   border-radius: 30px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 100%;
+   transform:translateY(-6px) translateX(-2px);  
+  
+}
+.items:hover,.items2:hover,.items3:hover,.items4:hover
+{
+    transform: scale(1.02);
+}
+.items2
+{
+    border: 1px solid;
+    border-radius: 4px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 100px 62.75px 65.75px;
+    grid-template-rows:50px 25px 25px ;
+    left: 12px;
+    top: 24px;
+    height: 100px;
+    width: 90%;
+    background-color: gainsboro;
+    
+}
+.images2
+{
+    border: 1px solid gainsboro;
+    border-radius: 4px 0px 0px 4px;
+    grid-row: 1/4;
+    width: 85%;
+    align-self: center;
+    justify-self: center;
+    
+}
+.text2
+{
+    grid-column: 2/4;
+    grid-row: 1/3;
+    background-color: gainsboro;
+    border-radius: 0px 4px 0px 0px;
+}
+
+.price2
+{
+   grid-column: 2/4;
+   background-color: whitesmoke;
+   border-radius: 30px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 100%;
+   transform:translateY(-6px) translateX(-2px); 
+}
+.items3
+{
+    border: 1px solid;
+    border-radius: 4px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 100px 62.75px 65.75px;
+    grid-template-rows:50px 25px 25px ;
+    left: 12px;
+    top: 34px;
+    height: 100px;
+    width: 90%;
+    background-color: gainsboro;
+    
+}
+.images3
+{
+    border: 1px solid transparent;
+    border-radius: 4px 0px 0px 4px;
+    grid-row: 1/4;
+    width: 85%;
+    align-self: center;
+    justify-self: center;
+    
+}
+.text3
+{
+    grid-column: 2/4;
+    grid-row: 1/3;
+    border-radius: 0px 4px 0px 0px;
+}
+
+.price3
+{
+   grid-column: 2/4;
+   background-color: whitesmoke;
+   border-radius: 30px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 100%;
+   transform:translateY(-6px) translateX(-2px);
+}
+.items4
+{
+    border: 1px solid;
+    border-radius: 4px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 100px 62.75px 65.75px;
+    grid-template-rows:50px 25px 25px ;
+    left: 12px;
+    top: 42px;
+    height: 100px;
+    width: 90%;
+    background-color: whitesmoke;
+    background-color: gainsboro;
+    
+}
+.images4
+{
+    border: 1px solid whitesmoke;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    grid-row: 1/4;
+    width: 85%;
+    align-self: center;
+    justify-self: center;
+    
+}
+.text4
+{
+    grid-column: 2/4;
+    grid-row: 1/3;
+    border-radius: 0px 4px 0px 0px;
+}
+
+.price4
+{
+   grid-column: 2/4;
+   background-color: whitesmoke;
+   border-radius:30px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 100%;
+   transform:translateY(-6px) translateX(-2px);
+}
+.shippingadd
+{
+    grid-column: span 1;
+}
+.shippingaddbutton
+{
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    height: 120px;
+    position: relative;
+    left: 20px;
+    background-color: rgba(209, 214, 209, 0.568);
+    border-radius: 5px;
+    grid-column: 1/4;
+    
+}
+.shippingaddbutton button
+{
+    align-self: center;
+    width: 80%;
+    border-radius: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.shippingadd img
+{
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    left:30px;
+    top:10px
+}
+.shippingadd p
+{
+    margin-bottom: 0;
+    position: relative;
+    left: 40px;
+}
+.shippingadd img:hover
+{
+    border: 2px solid yellow;
+    border-radius: 50%;
+}
+.map
+{
+    border-radius: 10px;
+    border: 2px solid black;
+    object-fit: cover;
+    width: 100%;
+}
+#addressattacher
+{
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    border: 2px solid black;
+    position: fixed;
+}
+#buttonAdder, #buttondecrease {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    border: none;
+    aspect-ratio: 1/1; 
+    position: relative;
+}
+
+#buttonAdder {
+    left: -7px;
+}
+
+#buttondecrease {
+    left: 7px;
+}
+
+#buttonAdder:hover, #buttondecrease:hover {
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+}
