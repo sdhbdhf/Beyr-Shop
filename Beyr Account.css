@@ -71,7 +71,7 @@ svg
 #_datemaker .clabel{color:black}
 
 body{
-    background-image: url(images/Background/3d-rendering-spring-wallpaper.jpg);
+    background-image: url(./Background/3d-rendering-spring-wallpaper.jpg);
     display: flex;
     justify-content: center; 
     align-items: center;      
